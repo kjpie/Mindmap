@@ -1,0 +1,25 @@
+[
+  {
+    "name":"React Mindmap",
+    "children":
+    [
+      {
+        "name":"Nodemap",
+        "children":
+        [
+          {"name":"HTML & CSS", "children": []},
+          {"name":"JavaScript", "children": []},
+          {"name":"DOM", "children": []},
+          {"name":"SVG", "children": []},
+          {"name":"test", "children": []}]
+      },
+      {
+        "name":"react",
+        "children": []
+      },
+      {
+        "name":"react-dom", 
+        "children": []
+      }]
+  }
+]

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
 
-function App() {
+import MindNode from 'react-nodemap'
+import sample from "./sample.json";
+
+import 'react-nodemap/dist/index.css'
+
+function App(){
+  const [data, setData] = useState(sample)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MindNode 
+        value={data} 
+        onDataChange={(value) => setData(value)} 
+        fields="keepAll" 
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
